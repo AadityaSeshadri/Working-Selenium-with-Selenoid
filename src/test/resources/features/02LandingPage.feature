@@ -21,11 +21,11 @@ Feature: Login to Facebook and Check for Homepage
 
     Scenario: Validate Social Links Connectivity to External System
       When User Clicks Social Media Links on Footer and Validate Connectivity to External Social Media
-    @Login
+
     Scenario: Validate Suggestions Link point to Twitter Page
       When User Clicks on Suggestion Link
       Then User Navigated to Twitter Page of We Build SG
-    @Login
+
     Scenario: Validate Suggestions Link point to Twitter Page
       When User Clicks on Pull Request Link
       Then User Navigated to Github Page of We Build SG

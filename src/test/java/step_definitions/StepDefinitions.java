@@ -36,29 +36,24 @@ public class StepDefinitions {
         PageFactory.initElements(driver, LandingPage.class);
         PageFactory.initElements(driver, RepoPerProgramingLanguagePage.class);
         PageFactory.initElements(driver, ReposPerWeekPage.class);
-
     }
 
     @Given("^User Navigates to Landing Page$")
     public void User_Navigates_Landing_Page(DataTable table) throws Throwable {
         List<String> list = table.asList(String.class);
         LandingPage.Navigate_LandingPage(driver,list.get(0),list.get(1));
-
-
     }
 
     @Then("^Validate Number of elements under list graph$")
     public void Validates_ElementCount(DataTable table) throws Throwable {
         List<Integer> list = table.asList(int.class);
         LandingPage.check_Landing_Page_ListCount(driver,list.get(0));
-
     }
 
     @And("^Validate element Names under list graph$")
     public void Validates_ElementText(DataTable table) throws Throwable {
         List<String> list = table.asList(String.class);
         LandingPage.check_Landing_Page_ListElement(driver,list);
-
     }
 
     @And("^Validate Yearly Report$")
@@ -67,7 +62,6 @@ public class StepDefinitions {
         LandingPage.check_Landing_Page_YearlyReport(driver,list.get(0),list.get(1),list.get(2),list.get(3),list.get(4));
         LandingPage.check_Landing_Page_YearlyReport(driver,list.get(5),list.get(6),list.get(7),list.get(8),list.get(9));
         LandingPage.check_Landing_Page_YearlyReport(driver,list.get(10),list.get(11),list.get(12),list.get(13),list.get(14));
-
     }
 
     @And("^Validate Navigations When Links from List Graph clicked$")
@@ -79,7 +73,6 @@ public class StepDefinitions {
     public void UserEntersValueInSearchBox(DataTable table) throws Throwable {
         List<String> list = table.asList(String.class);
         LandingPage.EnterSearchValue(driver,list.get(0));
-
     }
 
     @Then("^System should show below Options from list graph$")
@@ -106,9 +99,7 @@ public class StepDefinitions {
                 }
                 j+=2;
                 break;
-
             }
-
         }
     }
 
@@ -116,35 +107,49 @@ public class StepDefinitions {
     public void User_Clicks_Link_on_Footer() throws Throwable {
         //List<String> list = table.asList(String.class);
         LandingPage.ValidateSocialMediaConnectivityInFooter(driver,wait);
-
     }
 
     @When("^User Clicks on Suggestion Link$")
     public void user_Clicks_on_Suggestion_Link() throws Throwable {
         LandingPage.ClickSuggestionLink(driver);
-
     }
 
     @Then("^User Navigated to Twitter Page of We Build SG$")
     public void user_Navigated_to_Twitter_Page_of_We_Build_SG() throws Throwable {
         LandingPage.ValidateTwitterNavigation(driver);
-
     }
 
     @When("^User Clicks on Pull Request Link$")
     public void user_Clicks_on_Pull_Request_Link() throws Throwable {
         LandingPage.PullRequestLink(driver);
-
     }
 
     @Then("^User Navigated to Github Page of We Build SG$")
     public void user_Navigated_to_Github_Page_of_We_Build_SG() throws Throwable {
         LandingPage.ValidateGithubNavigation(driver);
-
-
     }
 
+    @Then("^Navigate to Repositories Page$")
+    public void NavigateToRepositoryPage() throws Throwable {
+        LandingPage.NavigatetoRepositoryPage(driver);
+    }
 
+    @Then("^Validate Expected Number of Available Languages$")
+    public void Validates_CountofLanguages(DataTable table) throws Throwable {
+        List<Integer> list = table.asList(int.class);
+        RepoPerProgramingLanguagePage.CheckRepositoryPageLanguagesCount(driver,list.get(0));
+
+    }
+    @And("^Validate Languages Names$")
+    public void ValidateLanguageNames(DataTable table) throws Throwable {
+        int i;
+        List<String> list = table.asList(String.class);
+       for (i=0;i<=list.size()/2;i+=2)
+       {
+           RepoPerProgramingLanguagePage.ValidateLanguageWithIndex(driver,list.get(i),list.get(i+1));
+
+       }
+    }
 
 
 }

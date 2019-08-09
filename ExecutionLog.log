@@ -904,4 +904,32 @@
  [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
  [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
  [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Count of Available Languages in Repositories 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Count of Available Languages in Repositories 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Count of Available Languages in Repositories 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Count of Available Languages in Repositories 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
  

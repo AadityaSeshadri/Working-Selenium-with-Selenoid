@@ -1,6 +1,6 @@
 Feature: Login to Facebook and Check for Homepage
   @Smoke
-  Scenario: Facebook Login
+  Scenario: Smoke Scenario
     Given User Navigates to Landing Page
     |https://webuildsg.github.io/data/|We Build SG Data|
     Then Validate Number of elements under list graph

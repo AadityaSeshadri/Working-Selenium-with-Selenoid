@@ -30,6 +30,8 @@ import java.util.List;
 	public static WebElement Lnk_Search;
 	@FindBy(how=How.XPATH, using="//a[text()='report bugs / send pull requests']")
 	public static WebElement Lnk_PullRequests;
+	@FindBy(how=How.XPATH, using="//p[text()='repositories per programming language']")
+	public static WebElement Lnk_RepositoryPerProgrammingLanguage;
 
 	//****************Place required to change when xpath or property changes
 
@@ -251,6 +253,13 @@ import java.util.List;
 		Assert.assertTrue(driver.getTitle().contains("GitHub"));
 		driver.navigate().back();
 		Reusable_Functions.waitForPageLoaded(driver);
+	}
+
+	public static void NavigatetoRepositoryPage(WebDriver driver) {
+		Lnk_RepositoryPerProgrammingLanguage.click();
+		Reusable_Functions.waitForPageLoaded(driver);
+
+
 	}
 }
 		
