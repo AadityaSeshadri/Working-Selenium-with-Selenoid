@@ -1,8 +1,9 @@
 Feature: Login to Facebook and Check for Homepage
+  Background:
+    Given User Navigates to Landing Page
+      |https://webuildsg.github.io/data/|We Build SG Data|
 
   Scenario: Validate Search Criteria- Need to Fill Search Text under When Step and Expected list to appear in Then Step with Yes or No
-    Given User Navigates to Landing Page
-    |https://webuildsg.github.io/data/|We Build SG Data|
     When User Enters below value on Search Edit Box
     |events|
     Then System should show below Options from list graph
@@ -19,19 +20,13 @@ Feature: Login to Facebook and Check for Homepage
       |event locations|No|
 
     Scenario: Validate Social Links Connectivity to External System
-    Given User Navigates to Landing Page
-      |https://webuildsg.github.io/data/|We Build SG Data|
       When User Clicks Social Media Links on Footer and Validate Connectivity to External Social Media
     @Login
     Scenario: Validate Suggestions Link point to Twitter Page
-      Given User Navigates to Landing Page
-        |https://webuildsg.github.io/data/|We Build SG Data|
       When User Clicks on Suggestion Link
       Then User Navigated to Twitter Page of We Build SG
     @Login
     Scenario: Validate Suggestions Link point to Twitter Page
-      Given User Navigates to Landing Page
-        |https://webuildsg.github.io/data/|We Build SG Data|
       When User Clicks on Pull Request Link
       Then User Navigated to Github Page of We Build SG
 
