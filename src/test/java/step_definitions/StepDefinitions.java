@@ -2,6 +2,7 @@ package step_definitions;
 
 import cucumber.api.DataTable;
 import cucumber.api.Scenario;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -55,12 +56,18 @@ public class StepDefinitions {
 
     }
   
-    @Then("^Validates Landing Page Elements$")
-    public void Validates_LandingPage() throws Throwable {
-        LandingPage.check_Landing_Page(driver);
+    @Then("^Validate Number of elements under list graph$")
+    public void Validates_ElementCount(DataTable table) throws Throwable {
+        List<Integer> list = table.asList(int.class);
+        LandingPage.check_Landing_Page_ListCount(driver,list.get(0));
 
     }
 
+    @And("^Validate element Names under list graph$")
+    public void Validates_ElementText(DataTable table) throws Throwable {
+        List<String> list = table.asList(String.class);
+        LandingPage.check_Landing_Page_ListElement(driver,list);
 
+    }
     
 }
