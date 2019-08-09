@@ -1,5 +1,5 @@
 Feature: Login to Facebook and Check for Homepage
-  @Login
+  @Smoke
   Scenario: Facebook Login
     Given User Navigates to Landing Page
     |https://webuildsg.github.io/data/|We Build SG Data|

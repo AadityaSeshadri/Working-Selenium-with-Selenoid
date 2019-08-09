@@ -5,6 +5,9 @@ import cucumber.api.Scenario;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -43,7 +46,7 @@ public class StepDefinitions {
 
 
     }
-  
+
     @Then("^Validate Number of elements under list graph$")
     public void Validates_ElementCount(DataTable table) throws Throwable {
         List<Integer> list = table.asList(int.class);
@@ -69,56 +72,54 @@ public class StepDefinitions {
 
     @And("^Validate Navigations When Links from List Graph clicked$")
     public void Validates_LiksNavigations(DataTable table) throws Throwable {
+        LandingPage.ValidateLinksNavigation(table,driver,wait);
+    }
+
+    @When("^User Enters below value on Search Edit Box$")
+    public void UserEntersValueInSearchBox(DataTable table) throws Throwable {
+        List<String> list = table.asList(String.class);
+        LandingPage.EnterSearchValue(driver,list.get(0));
+
+    }
+
+    @Then("^System should show below Options from list graph$")
+    public void system_should_show_below_Options_from_list_graph(DataTable arg1) throws Throwable {
         int i;
         int j = 1;
-        List<String> list = table.asList(String.class);
+        String xpath;
+        List<String> list = arg1.asList(String.class);
         for (i = 0; i <= list.size() - 2; i += 2)
         {
             System.out.println("Value of I insode i loop ++++++++++++" + i + "+++++++++"+ list.get(i));
-            LandingPage.Navigate_listItems(driver, list.get(i));
+             xpath = LandingPage.FormXpathforSearchCriteria(list.get(i));
+            System.out.println("**************Value of Xpath in Step Def" + xpath);
             while (j <= list.size() - 1)
             {
-                System.out.println("Value of J insode i loop ++++++++++++" + j + "+++++++++"+ list.get(j));
-                switch (list.get(j)) {
-                    case ("repositories updated per week"):
-                        ReposPerWeekPage.ValidatePageNavigation(wait, driver, list.get(j));
-                        break;
-                    case ("events per week"):
-                        EventsPerWeekPage.ValidatePageNavigation(wait, driver, list.get(j));
-                        break;
-                    case ("update activities per programming languages"):
-                        ActivitiesPerProgrammingPage.ValidatePageNavigation(driver, list.get(j));
-                        break;
-                    case ("active user groups with > 5 events"):
-                        ActiveUserGroupsPage.ValidatePageNavigation(driver, list.get(j));
-                        break;
-                    case ("active repos with > 10 updates"):
-                        ActiveReposPage.ValidatePageNavigation(driver, list.get(j));
-                        break;
-                    case ("repositories per programming languages"):
-                        RepoPerProgramingLanguagePage.ValidatePageNavigation(driver, list.get(j));
-                        break;
-                    case ("events by day of week"):
-                        EventDayofWeekPage.ValidatePageNavigation(driver, list.get(j));
-                        break;
-                    case ("events per week of month"):
-                        EventPerWeekofMonthPage.ValidatePageNavigation(driver, list.get(j));
-                        break;
-                    case ("events by duration"):
-                        EventDurationPage.ValidatePageNavigation(driver, list.get(j));
-                        break;
-                    case ("events by time of day"):
-                        EventTimeOfDayPage.ValidatePageNavigation(driver, list.get(j));
-                        break;
-                    case ("popular event locations"):
-                        EventLocationPage.ValidatePageNavigation(driver, list.get(j));
-                        break;
-
+                System.out.println("&&&&&&&&&&&&&&&&&&&&&Value of J "+ list.get(j));
+                if(list.get(j).equals("Yes"))
+                {
+                    Assert.assertTrue(driver.findElement(By.xpath(xpath)).isDisplayed());
+                }
+                else
+                {
+                    Assert.assertTrue(!driver.findElement(By.xpath(xpath)).isDisplayed());
                 }
                 j+=2;
                 break;
+
             }
 
         }
     }
+
+    @When("^User Clicks Link on Footer$")
+    public void User_Clicks_Link_on_Footer(DataTable table) throws Throwable {
+        List<String> list = table.asList(String.class);
+        LandingPage.FormXpathforFooterLinks(driver,list.get(0));
+
+    }
+
+
+
+
 }

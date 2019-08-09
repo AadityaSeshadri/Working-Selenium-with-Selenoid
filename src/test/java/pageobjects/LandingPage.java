@@ -1,6 +1,7 @@
 package pageobjects;
 //import helpers.Log;
 
+import cucumber.api.DataTable;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,20 +24,8 @@ import java.util.List;
 	public static WebElement Lnk_Home;
 	@FindBy(how=How.XPATH, using="//ul[@class='list-graph']")
 	public static WebElement Lst_Graph;
-	@FindBy(how=How.ID, using="total-repos-2017")
-	public static WebElement Lbl_TotalRepos2017;
-	@FindBy(how=How.ID, using="total-updates-2017")
-	public static WebElement Lbl_TotalUpdates2017;
-	@FindBy(how=How.ID, using="total-events-2017")
-	public static WebElement Lbl_TotalEvents2017;
-	@FindBy(how=How.ID, using="total-groups-2017")
-	public static WebElement Lbl_TotalGroups2017;
-
-
-	@FindBy(how=How.ID, using="total-repos-2016")
-	public static WebElement Lbl_TotalRepos2016;
-	@FindBy(how=How.ID, using="total-repos-2015")
-	public static WebElement Lbl_TotalRepos2015;
+	@FindBy(how=How.ID, using="search")
+	public static WebElement Txt_Search;
 
 	//****************Place required to change when xpath or property changes
 
@@ -111,6 +100,86 @@ import java.util.List;
 			//Reusable_Functions.waitForPageLoaded(driver);
 
 
+	}
+
+	public static void EnterSearchValue(WebDriver driver,String searchtext)
+	{
+		Reusable_Functions.EnterTextBox(Txt_Search,searchtext);
+	}
+
+	public static String FormXpathforSearchCriteria(String ListItem) {
+		String Formedxpath="";
+		System.out.println("***************Value of List Item **********"+ ListItem);
+		switch (ListItem)
+		{
+			case("repos per week"):  Formedxpath = "//*[@class='graph-name' and text()='repos per week']";break;
+			case("events per week"): Formedxpath = "//*[@class='graph-name' and text()='events per week']";break;
+			case("activities per programming languages"): Formedxpath = "//*[@class='graph-name' and text()='activities per programming languages']";break;
+			case("active user groups"): Formedxpath = "//*[@class='graph-name' and text()='active user groups']";break;
+			case("active repositories"): Formedxpath = "//*[@class='graph-name' and text()='active repositories']";break;
+			case("repositories per programming language"): Formedxpath = "//*[@class='graph-name' and text()='repositories per programming language']";break;
+			case("event day of week"): Formedxpath = "//*[@class='graph-name' and text()='event day of week']";break;
+			case("event per week of month"): Formedxpath = "//*[@class='graph-name' and text()='event per week of month']";break;
+			case("event duration"): Formedxpath = "//*[@class='graph-name' and text()='event duration']";break;
+			case("event time of day"): Formedxpath = "//*[@class='graph-name' and text()='event time of day']";break;
+			case("event locations"): Formedxpath = "//*[@class='graph-name' and text()='event locations']";break;
+
+		}
+		return Formedxpath;
+	}
+
+	public static void ValidateLinksNavigation(DataTable table,WebDriver driver,WebDriverWait wait) {
+		int i;
+		int j = 1;
+		List<String> list = table.asList(String.class);
+		for (i = 0; i <= list.size() - 2; i += 2)
+		{
+			System.out.println("Value of I insode i loop ++++++++++++" + i + "+++++++++"+ list.get(i));
+			LandingPage.Navigate_listItems(driver, list.get(i));
+			while (j <= list.size() - 1)
+			{
+				System.out.println("Value of J insode i loop ++++++++++++" + j + "+++++++++"+ list.get(j));
+				switch (list.get(j)) {
+					case ("repositories updated per week"):
+						ReposPerWeekPage.ValidatePageNavigation(wait, driver, list.get(j));
+						break;
+					case ("events per week"):
+						EventsPerWeekPage.ValidatePageNavigation(wait, driver, list.get(j));
+						break;
+					case ("update activities per programming languages"):
+						ActivitiesPerProgrammingPage.ValidatePageNavigation(driver, list.get(j));
+						break;
+					case ("active user groups with > 5 events"):
+						ActiveUserGroupsPage.ValidatePageNavigation(driver, list.get(j));
+						break;
+					case ("active repos with > 10 updates"):
+						ActiveReposPage.ValidatePageNavigation(driver, list.get(j));
+						break;
+					case ("repositories per programming languages"):
+						RepoPerProgramingLanguagePage.ValidatePageNavigation(driver, list.get(j));
+						break;
+					case ("events by day of week"):
+						EventDayofWeekPage.ValidatePageNavigation(driver, list.get(j));
+						break;
+					case ("events per week of month"):
+						EventPerWeekofMonthPage.ValidatePageNavigation(driver, list.get(j));
+						break;
+					case ("events by duration"):
+						EventDurationPage.ValidatePageNavigation(driver, list.get(j));
+						break;
+					case ("events by time of day"):
+						EventTimeOfDayPage.ValidatePageNavigation(driver, list.get(j));
+						break;
+					case ("popular event locations"):
+						EventLocationPage.ValidatePageNavigation(driver, list.get(j));
+						break;
+
+				}
+				j+=2;
+				break;
+			}
+
+		}
 	}
 }
 		
