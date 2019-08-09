@@ -50,7 +50,8 @@ public class StepDefinitions {
     @Given("^User Navigates to Landing Page$")
     public void User_Navigates_Landing_Page(DataTable table) throws Throwable {
         List<String> list = table.asList(String.class);
-        LandingPage.Navigate_LandingPage(driver,list.get(0));
+        LandingPage.Navigate_LandingPage(driver,list.get(0),list.get(1));
+
 
     }
   

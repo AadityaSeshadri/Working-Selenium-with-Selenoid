@@ -3,24 +3,18 @@ package step_definitions;
 import cucumber.api.Scenario;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.PropertyConfigurator;
-import org.junit.Assert;
-//import org.apache.poi.xssf.usermodel.XSSFCell;
-//import org.apache.poi.xssf.usermodel.XSSFRow;
-//import org.apache.poi.xssf.usermodel.XSSFSheet;
-//import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.HashMap;
-import org.openqa.selenium.JavascriptExecutor;
+
+//import org.apache.poi.xssf.usermodel.XSSFCell;
+//import org.apache.poi.xssf.usermodel.XSSFRow;
+//import org.apache.poi.xssf.usermodel.XSSFSheet;
+//import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Reusable_Functions {
     final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(Reusable_Functions.class);
@@ -83,13 +77,13 @@ public class Reusable_Functions {
     public static  void ClearTextBox(WebElement element)
     {
         element.clear();
-       log.info("Element----------"+ element.getAttribute("innerText") + "Value is cleared");
+       log.info("Function----ClearTextBox----Element----------"+ element.getAttribute("innerText") + "Value is cleared");
     }
 
     public static  void EnterTextBox(WebElement element,String Text)
     {
         element.sendKeys(Text);
-        log.info("Element----------"+ element.getAttribute("innerText")  + "Value entered as-------"+ Text);
+        log.info("Function ----EnterTextBox----Element----------"+ element.getAttribute("innerText")  + "Value entered as-------"+ Text);
     }
 
     public static void ButtonClick(WebElement element) {
@@ -101,6 +95,7 @@ public class Reusable_Functions {
 	public static void Navigate(WebDriver driver, String uRL) {
        driver.get(uRL);
        driver.manage().window().maximize() ;
+
     }
     
  
@@ -113,5 +108,15 @@ public class Reusable_Functions {
                 };
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(pageLoadCondition);
+
+
+        log.info("Function ----waitForPageLoaded----Synchronized untill Page Loaded");
+
 	}
+
+    public static void ValidatePageTitle(WebDriver driver, String pageTitle) {
+        //System.out.println("Title of Page --------"+ driver.getTitle());
+        driver.getTitle().contains(pageTitle);
+
+    }
 }

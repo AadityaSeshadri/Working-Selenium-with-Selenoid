@@ -21,11 +21,13 @@ import step_definitions.*;
 	//****************Place required to change when xpath or property changes
 
 
-	public static void Navigate_LandingPage(WebDriver driver,String URL)
+	public static void Navigate_LandingPage(WebDriver driver,String URL,String PageTitle)
 	{
 		//Hooks.driver.get(URL);
-	
+		Reusable_Functions.waitForPageLoaded(driver);
 		Reusable_Functions.Navigate(driver,URL);
+		Reusable_Functions.ValidatePageTitle(driver,PageTitle);
+
 
 
 	}
@@ -36,6 +38,8 @@ import step_definitions.*;
 		Assert.assertTrue(Lnk_Home.isDisplayed());
 		Reusable_Functions.AddStepLogToReport("Home Page Displayed");
 	}
+
+
 }
 		
 
