@@ -50,8 +50,8 @@ public class Hooks {
         capabilities.setCapability("enableLog", true);
         logger.info("@@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@");
         driver = new RemoteWebDriver(
-                URI.create("http://selenoid:4444/wd/hub").toURL(),
-                // URI.create("http://127.0.0.1:4444/wd/hub").toURL(),
+                //URI.create("http://selenoid:4444/wd/hub").toURL(),
+                 URI.create("http://127.0.0.1:4444/wd/hub").toURL(),
                 capabilities);
         System.out.println("**************************Driver Initialized***************************************");
         ;

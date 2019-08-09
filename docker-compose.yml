@@ -24,13 +24,13 @@ services:
     ports:
       - "8080:8080"
     command: ["--selenoid-uri", "http://selenoid:4444"]
-  seleniumcode:
-    build: .
-    network_mode: bridge
-    links:
-      - selenoid
-    volumes:
-      - "~/.m2:/root/.m2"
-  dockerize:
-    image: jwilder/dockerize
-    command: [ "/bin/sh", "-c", "while true; do sleep 30; done;" ]
+  #seleniumcode:
+   # build: .
+    #network_mode: bridge
+    #links:
+    #  - selenoid
+    #volumes:
+    #  - "~/.m2:/root/.m2"
+  #dockerize:
+   # image: jwilder/dockerize
+    #command: [ "/bin/sh", "-c", "while true; do sleep 30; done;" ]
