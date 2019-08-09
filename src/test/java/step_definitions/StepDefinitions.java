@@ -119,6 +119,31 @@ public class StepDefinitions {
 
     }
 
+    @When("^User Clicks on Suggestion Link$")
+    public void user_Clicks_on_Suggestion_Link() throws Throwable {
+        LandingPage.ClickSuggestionLink(driver);
+
+    }
+
+    @Then("^User Navigated to Twitter Page of We Build SG$")
+    public void user_Navigated_to_Twitter_Page_of_We_Build_SG() throws Throwable {
+        LandingPage.ValidateTwitterNavigation(driver);
+
+    }
+
+    @When("^User Clicks on Pull Request Link$")
+    public void user_Clicks_on_Pull_Request_Link() throws Throwable {
+        LandingPage.PullRequestLink(driver);
+
+    }
+
+    @Then("^User Navigated to Github Page of We Build SG$")
+    public void user_Navigated_to_Github_Page_of_We_Build_SG() throws Throwable {
+        LandingPage.ValidateGithubNavigation(driver);
+
+
+    }
+
 
 
 

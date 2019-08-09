@@ -26,6 +26,10 @@ import java.util.List;
 	public static WebElement Lst_Graph;
 	@FindBy(how=How.ID, using="search")
 	public static WebElement Txt_Search;
+	@FindBy(how=How.XPATH, using="//a[text()='suggestions']")
+	public static WebElement Lnk_Search;
+	@FindBy(how=How.XPATH, using="//a[text()='report bugs / send pull requests']")
+	public static WebElement Lnk_PullRequests;
 
 	//****************Place required to change when xpath or property changes
 
@@ -226,6 +230,28 @@ import java.util.List;
 	}
 
 
+	public static void ClickSuggestionLink(WebDriver driver) {
+		Lnk_Search.click();
+		Reusable_Functions.waitForPageLoaded(driver);
+
+	}
+
+	public static void PullRequestLink(WebDriver driver) {
+		Lnk_PullRequests.click();
+		Reusable_Functions.waitForPageLoaded(driver);
+	}
+
+	public static void ValidateTwitterNavigation(WebDriver driver) {
+		Assert.assertTrue(driver.getTitle().contains("We Build SG (@webuildsg) | Twitter"));
+		driver.navigate().back();
+		Reusable_Functions.waitForPageLoaded(driver);
+	}
+
+	public static void ValidateGithubNavigation(WebDriver driver) {
+		Assert.assertTrue(driver.getTitle().contains("GitHub"));
+		driver.navigate().back();
+		Reusable_Functions.waitForPageLoaded(driver);
+	}
 }
 		
 
