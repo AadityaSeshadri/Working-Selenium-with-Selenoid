@@ -86,7 +86,17 @@ import java.util.List;
 
 	}
 
-	public static void check_Landing_Page_ListNavigations(WebDriver driver, String s, String s1) {
+
+
+	public static void Navigate_listItems(WebDriver driver,String ListItem) {
+		if(ListItem.equals("repos per week"))
+		{
+			String Formedxpath = "//p[text()='repos per week']";
+			driver.findElement(By.xpath(Formedxpath)).click();
+
+
+		}
+
 	}
 }
 		

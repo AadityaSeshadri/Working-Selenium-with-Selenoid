@@ -1,7 +1,7 @@
 Feature: Login to Facebook and Check for Homepage
   @Login
   Scenario: Facebook Login
-  Given User Navigates to Landing Page
+    Given User Navigates to Landing Page
     |https://webuildsg.github.io/data/|We Build SG Data|
     Then Validate Number of elements under list graph
     |11|
@@ -12,5 +12,15 @@ Feature: Login to Facebook and Check for Homepage
     |2016|242|3517|921|193|
     |2017|330|3893|860|226|
     And Validate Navigations When Links from List Graph clicked
-    |repos per week||
+    |repos per week|repositories updated per week|
+    |events per week|repositories updated per week|
+    |activities per programming languages|repositories updated per week|
+    |active user groups|repositories updated per week|
+    |active repositories|repositories updated per week|
+    |repositories per programming language|repositories updated per week|
+    |event day of week|repositories updated per week|
+    |event per week of month|repositories updated per week|
+    |event duration|repositories updated per week|
+    |event time of day|repositories updated per week|
+    |event locations|repositories updated per week|
 
