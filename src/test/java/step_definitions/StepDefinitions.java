@@ -69,5 +69,18 @@ public class StepDefinitions {
         LandingPage.check_Landing_Page_ListElement(driver,list);
 
     }
-    
+
+    @And("^Validate Yearly Report$")
+    public void Validates_YearlyReport(DataTable table) throws Throwable {
+        List<String> list = table.asList(String.class);
+        LandingPage.check_Landing_Page_YearlyReport(driver,list.get(0),list.get(1),list.get(2),list.get(3),list.get(4));
+
+    }
+
+    @And("^Validate Navigations When Links from List Graph clicked$")
+    public void Validates_LiksNavigations(DataTable table) throws Throwable {
+        List<String> list = table.asList(String.class);
+        LandingPage.check_Landing_Page_ListNavigations(driver,list.get(0),list.get(1));
+
+    }
 }
