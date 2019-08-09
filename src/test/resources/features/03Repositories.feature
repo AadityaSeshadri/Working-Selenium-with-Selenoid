@@ -8,26 +8,26 @@ Feature: Login to Facebook and Check for Homepage
     Then Validate Expected Number of Available Languages
     |20|
     And Validate Languages Names
-      |1|C|
-      |2|C++|
-      |3|Clojure|
-      |4|CoffeeScript|
-      |5|CSS|
-      |6|Go|
-      |7|Haskell|
-      |8|HTML|
-      |9|Java|
-      |10|JavaScript|
-      |11|Julia|
-      |12|Objective-C|
-      |13|PhP|
-      |14|Python|
-      |15|R|
-      |16|Ruby|
-      |17|Rust|
-      |18|Shell|
-      |19|Swift|
-      |20|Tex|
+      |1|C|7|
+      |2|C++|17|
+      |3|Clojure|6|
+      |4|CoffeeScript|3|
+      |5|CSS|14|
+      |6|Go|15 |
+      |7|Haskell|6|
+      |8|HTML|13  |
+      |9|Java|30  |
+      |10|JavaScript|84|
+      |11|Julia|1      |
+      |12|Objective-C|22|
+      |13|PHP|16        |
+      |14|Python|41     |
+      |15|R|3           |
+      |16|Ruby|10       |
+      |17|Rust|0        |
+      |18|Shell|3       |
+      |19|Swift|14      |
+      |20|Tex|2         |
 
 
 

@@ -143,10 +143,12 @@ public class StepDefinitions {
     @And("^Validate Languages Names$")
     public void ValidateLanguageNames(DataTable table) throws Throwable {
         int i;
+
         List<String> list = table.asList(String.class);
-       for (i=0;i<=list.size()/2;i+=2)
+        System.out.println("|||||||||||||||List Size||||||||"+list.size());
+       for (i=0;i==(list.size());i+=3)
        {
-           RepoPerProgramingLanguagePage.ValidateLanguageWithIndex(driver,list.get(i),list.get(i+1));
+           RepoPerProgramingLanguagePage.ValidateLanguageWithIndex(wait,driver,list.get(i),list.get(i+1),list.get(i+2));
 
        }
     }

@@ -7,10 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import step_definitions.Reusable_Functions;
 
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 //import pageobjects.Log;;
 //public class HomePage extends BaseClass{
@@ -23,11 +26,13 @@ import java.util.List;
 	public static WebElement Lbl_PageTitle;
 	@FindBy(how= How.ID, using="select-language")
 	public static WebElement List_SelectLanguage;
+	@FindBy(how= How.XPATH, using="//div[@id='repos-per-programming-language']")
+	public static WebElement List_ReposPerProgrammingLanguage;
 
 	public static void ValidatePageNavigation(WebDriver driver,String Text)
 	{
 		Reusable_Functions.waitForPageLoaded(driver);
-		Assert.assertEquals(Lbl_PageTitle.getText(),Text);
+		assertEquals(Lbl_PageTitle.getText(),Text);
 		driver.navigate().back();
 
 	}
@@ -39,8 +44,18 @@ import java.util.List;
 		Assert.assertSame(Count,options.size());
     }
 
-	public static void ValidateLanguageWithIndex(WebDriver driver,String Index, String LanguageName) {
-		Assert.assertTrue(driver.findElement(By.xpath("//ul[@id='select-language']/li["+Index+"]")).getText().contains(LanguageName));
+	public static void ValidateLanguageWithIndex(WebDriverWait wait,WebDriver driver,String Index, String LanguageName,String RepoCount) {
+		if(Integer.parseInt(RepoCount)!=0)
+		{
+			Assert.assertTrue(driver.findElement(By.xpath("//ul[@id='select-language']/li["+Index+"]")).getText().contains(LanguageName));
+
+			driver.findElement(By.xpath("//ul[@id='select-language']/li["+Index+"]/label")).click();
+			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@id='repos-per-programming-language']"))));
+			Assert.assertSame(Integer.parseInt(RepoCount),List_ReposPerProgrammingLanguage.findElements(By.tagName("p")).size());
+			System.out.println("{{{{{{{{Validation done for Xpath ------------>"+ "//ul[@id='select-language']/li["+Index+"]");
+		}
+
+
 
 	}
 
