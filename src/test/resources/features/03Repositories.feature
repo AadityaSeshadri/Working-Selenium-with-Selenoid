@@ -3,7 +3,6 @@ Feature: Login to Facebook and Check for Homepage
     Given User Navigates to Landing Page
       |https://webuildsg.github.io/data/|We Build SG Data|
     Then Navigate to Repositories Page
-  @Login
   Scenario: Validate Count of Available Languages in Repositories
     Then Validate Expected Number of Available Languages
     |20|
@@ -28,6 +27,13 @@ Feature: Login to Facebook and Check for Homepage
       |18|Shell|3       |
       |19|Swift|14      |
       |20|Tex|2         |
-
+    @Login
+    Scenario: Validate Click from Repository Page Navigates to Github
+      When Select below Programming Language
+      |C|
+      And Click Repo of the selected programming language
+      |pili-librtmp |
+      Then Should we navigated to GitHub Page of Repo
+      |pili-librtmp |
 
 

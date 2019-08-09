@@ -149,9 +149,24 @@ public class StepDefinitions {
        for (i=0;i==(list.size());i+=3)
        {
            RepoPerProgramingLanguagePage.ValidateLanguageWithIndex(wait,driver,list.get(i),list.get(i+1),list.get(i+2));
-
        }
     }
+    @Then("^Select below Programming Language$")
+    public void SelectProgrammingLanguage(DataTable table) throws Throwable {
+        List<String> list = table.asList(String.class);
+        RepoPerProgramingLanguagePage.SelectProgrammingLanguage(driver,list.get(0));
+    }
+    @And("^Click Repo of the selected programming language$")
+    public void ClickRepo(DataTable table) throws Throwable {
+        List<String> list = table.asList(String.class);
+        RepoPerProgramingLanguagePage.ClickRepo(driver,list.get(0));
+    }
+    @Then("^Should we navigated to GitHub Page of Repo$")
+    public void NavigatedtoGithub(DataTable table) throws Throwable {
+        List<String> list = table.asList(String.class);
+        RepoPerProgramingLanguagePage.VaidateGithubLink(driver,list.get(0));
+    }
+
 
 
 }
