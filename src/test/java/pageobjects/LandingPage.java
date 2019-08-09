@@ -181,6 +181,51 @@ import java.util.List;
 
 		}
 	}
+
+	public static void ValidateSocialMediaConnectivityInFooter(WebDriver driver, WebDriverWait wait)
+	{
+		driver.findElement(By.className("footer-twitter")).click();
+		Reusable_Functions.waitForPageLoaded(driver);
+		Assert.assertTrue(driver.getTitle().contains("We Build SG (@webuildsg) | Twitter"));
+		driver.navigate().back();
+		Reusable_Functions.waitForPageLoaded(driver);
+
+
+		driver.findElement(By.className("footer-facebook")).click();
+		Reusable_Functions.waitForPageLoaded(driver);
+		Assert.assertTrue(driver.getTitle().contains("We Build SG - Home | Facebook"));
+		driver.navigate().back();
+		Reusable_Functions.waitForPageLoaded(driver);
+
+
+		driver.findElement(By.className("footer-github")).click();
+		Reusable_Functions.waitForPageLoaded(driver);
+		Assert.assertTrue(driver.getTitle().contains("GitHub"));
+		driver.navigate().back();
+		Reusable_Functions.waitForPageLoaded(driver);
+
+
+		driver.findElement(By.className("footer-rss")).click();
+		Reusable_Functions.waitForPageLoaded(driver);
+		Assert.assertTrue(driver.getTitle().contains("We Build SG LIVE - powered by FeedBurner"));
+		driver.navigate().back();
+		Reusable_Functions.waitForPageLoaded(driver);
+
+
+		driver.findElement(By.className("footer-itunes")).click();
+		Reusable_Functions.waitForPageLoaded(driver);
+		Assert.assertTrue(driver.getTitle().contains("We Build SG LIVE on Apple Podcasts"));
+		driver.navigate().back();
+		Reusable_Functions.waitForPageLoaded(driver);
+
+		//We Build SG (@webuildsg) | Twitter
+		//We Build SG - Home | Facebook
+		//We Build SG ? GitHub
+		//We Build SG LIVE - powered by FeedBurner
+		//?We Build SG LIVE on Apple Podcasts
+	}
+
+
 }
 		
 

@@ -1,5 +1,5 @@
 Feature: Login to Facebook and Check for Homepage
-  @Login
+
   Scenario: Validate Search Criteria- Need to Fill Search Text under When Step and Expected list to appear in Then Step with Yes or No
     Given User Navigates to Landing Page
     |https://webuildsg.github.io/data/|We Build SG Data|
@@ -17,10 +17,13 @@ Feature: Login to Facebook and Check for Homepage
       |event duration|No|
       |event time of day|No|
       |event locations|No|
-
+  @Login
     Scenario: Validate Social Links Connectivity to External System
-      When User Clicks Link on Footer
-      |Twitter||
+    Given User Navigates to Landing Page
+      |https://webuildsg.github.io/data/|We Build SG Data|
+      When User Clicks Social Media Links on Footer and Validate Connectivity to External Social Media
+
+
 
 
 

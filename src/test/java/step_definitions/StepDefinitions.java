@@ -112,10 +112,10 @@ public class StepDefinitions {
         }
     }
 
-    @When("^User Clicks Link on Footer$")
-    public void User_Clicks_Link_on_Footer(DataTable table) throws Throwable {
-        List<String> list = table.asList(String.class);
-        LandingPage.FormXpathforFooterLinks(driver,list.get(0));
+    @When("^User Clicks Social Media Links on Footer and Validate Connectivity to External Social Media$")
+    public void User_Clicks_Link_on_Footer() throws Throwable {
+        //List<String> list = table.asList(String.class);
+        LandingPage.ValidateSocialMediaConnectivityInFooter(driver,wait);
 
     }
 
