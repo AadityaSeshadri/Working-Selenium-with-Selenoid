@@ -7,6 +7,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pageobjects.*;
 
 import java.util.List;
@@ -14,11 +15,13 @@ import java.util.List;
 public class StepDefinitions {
     public WebDriver driver;
     public Scenario scenario;
+    public WebDriverWait wait;
 
     public StepDefinitions()
     {
     	driver = Hooks.driver;
     	scenario = Hooks.scenario;
+    	wait = Hooks.wait;
         PageFactory.initElements(driver, ActiveReposPage.class);
         PageFactory.initElements(driver, ActiveUserGroupsPage.class);
         PageFactory.initElements(driver, ActivitiesPerProgrammingPage.class);
@@ -59,21 +62,63 @@ public class StepDefinitions {
     public void Validates_YearlyReport(DataTable table) throws Throwable {
         List<String> list = table.asList(String.class);
         LandingPage.check_Landing_Page_YearlyReport(driver,list.get(0),list.get(1),list.get(2),list.get(3),list.get(4));
+        LandingPage.check_Landing_Page_YearlyReport(driver,list.get(5),list.get(6),list.get(7),list.get(8),list.get(9));
+        LandingPage.check_Landing_Page_YearlyReport(driver,list.get(10),list.get(11),list.get(12),list.get(13),list.get(14));
 
     }
 
     @And("^Validate Navigations When Links from List Graph clicked$")
     public void Validates_LiksNavigations(DataTable table) throws Throwable {
+        int i;
+        int j = 1;
         List<String> list = table.asList(String.class);
-        LandingPage.Navigate_listItems(driver,list.get(0));
-        switch (list.get(0))
+        for (i = 0; i <= list.size() - 2; i += 2)
         {
-            case("repos per week"): ReposPerWeekPage.ValidateRepoPerWeekPage(list.get(1));
+            System.out.println("Value of I insode i loop ++++++++++++" + i + "+++++++++"+ list.get(i));
+            LandingPage.Navigate_listItems(driver, list.get(i));
+            while (j <= list.size() - 1)
+            {
+                System.out.println("Value of J insode i loop ++++++++++++" + j + "+++++++++"+ list.get(j));
+                switch (list.get(j)) {
+                    case ("repositories updated per week"):
+                        ReposPerWeekPage.ValidatePageNavigation(wait, driver, list.get(j));
+                        break;
+                    case ("events per week"):
+                        EventsPerWeekPage.ValidatePageNavigation(wait, driver, list.get(j));
+                        break;
+                    case ("update activities per programming languages"):
+                        ActivitiesPerProgrammingPage.ValidatePageNavigation(driver, list.get(j));
+                        break;
+                    case ("active user groups with > 5 events"):
+                        ActiveUserGroupsPage.ValidatePageNavigation(driver, list.get(j));
+                        break;
+                    case ("active repos with > 10 updates"):
+                        ActiveReposPage.ValidatePageNavigation(driver, list.get(j));
+                        break;
+                    case ("repositories per programming languages"):
+                        RepoPerProgramingLanguagePage.ValidatePageNavigation(driver, list.get(j));
+                        break;
+                    case ("events by day of week"):
+                        EventDayofWeekPage.ValidatePageNavigation(driver, list.get(j));
+                        break;
+                    case ("events per week of month"):
+                        EventPerWeekofMonthPage.ValidatePageNavigation(driver, list.get(j));
+                        break;
+                    case ("events by duration"):
+                        EventDurationPage.ValidatePageNavigation(driver, list.get(j));
+                        break;
+                    case ("events by time of day"):
+                        EventTimeOfDayPage.ValidatePageNavigation(driver, list.get(j));
+                        break;
+                    case ("popular event locations"):
+                        EventLocationPage.ValidatePageNavigation(driver, list.get(j));
+                        break;
+
+                }
+                j+=2;
+                break;
+            }
 
         }
-
-
-        driver.navigate().back();
-
     }
 }

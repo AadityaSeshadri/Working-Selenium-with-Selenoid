@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,10 +19,12 @@ public class Hooks {
 
     final Logger logger = Utilites.getLogData(Logger.class.getName());
     public static RemoteWebDriver driver;
+    public static WebDriverWait wait;
     public static Scenario scenario;
     public static String OS_Name;
     @Before
     public void openBrowser(Scenario scenario) throws IOException {
+         //wait = new WebDriverWait(driver, 30);
        // logger.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@"+ System.getProperty("Browser"));
         //System.out.println("&&&&&&&&&&&&&&&&&&Browser Value&&&&&&&&&&&&&&&&&" + System.getProperty("Browser"));
         File file = new File(System.getProperty("user.dir") + "/ExecutionLog.log");
@@ -57,6 +60,7 @@ public class Hooks {
         ;
         logger.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@");
         logger.info("@@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@" + scenario.getName());
+        wait = new WebDriverWait(driver,20);
         
     }
 

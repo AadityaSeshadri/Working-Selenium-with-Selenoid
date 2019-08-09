@@ -67,6 +67,7 @@ import java.util.List;
 		List<WebElement> Elements = Lst_Graph.findElements(By.tagName("li"));
 		for(int i=0;i<Elements.size();i++)
 		{
+			Assert.assertTrue(Elements.get(i).isDisplayed());
 			Assert.assertEquals(Elements.get(i).getText(),list.get(i));
 		}
 
@@ -79,23 +80,36 @@ import java.util.List;
 		String Xpath_Total_Events = "total-events-";
 		String Xpath_total_Groups = "total-groups-";
 
-		Assert.assertEquals(driver.findElement(By.id(Xpath_Total_OpenSource_Repos+Year)).getText(),OpenSourceRepoCount);
-		Assert.assertEquals(driver.findElement(By.id(Xpath_Total_Updates+Year)).getText(),CountofCommits);
-		Assert.assertEquals(driver.findElement(By.id(Xpath_Total_Events+Year)).getText(),CountofEvents);
-		Assert.assertEquals(driver.findElement(By.id(Xpath_total_Groups+Year)).getText(),CountofGroups);
+		Assert.assertEquals(OpenSourceRepoCount,driver.findElement(By.id(Xpath_Total_OpenSource_Repos+Year)).getText());
+		Assert.assertEquals(CountofCommits,driver.findElement(By.id(Xpath_Total_Updates+Year)).getText());
+		Assert.assertEquals(CountofEvents,driver.findElement(By.id(Xpath_Total_Events+Year)).getText());
+		Assert.assertEquals(CountofGroups,driver.findElement(By.id(Xpath_total_Groups+Year)).getText());
 
 	}
 
 
 
 	public static void Navigate_listItems(WebDriver driver,String ListItem) {
-		if(ListItem.equals("repos per week"))
+		String Formedxpath = "";
+		switch (ListItem)
 		{
-			String Formedxpath = "//p[text()='repos per week']";
-			driver.findElement(By.xpath(Formedxpath)).click();
-
+			case("repos per week"):  Formedxpath = "//p[text()='repos per week']";break;
+			case("events per week"): Formedxpath = "//p[text()='events per week']";break;
+			case("activities per programming languages"): Formedxpath = "//p[text()='activities per programming languages']";break;
+			case("active user groups"): Formedxpath = "//p[text()='active user groups']";break;
+			case("active repositories"): Formedxpath = "//p[text()='active repositories']";break;
+			case("repositories per programming language"): Formedxpath = "//p[text()='repositories per programming language']";break;
+			case("event day of week"): Formedxpath = "//p[text()='event day of week']";break;
+			case("event per week of month"): Formedxpath = "//p[text()='event per week of month']";break;
+			case("event duration"): Formedxpath = "//p[text()='event duration']";break;
+			case("event time of day"): Formedxpath = "//p[text()='event time of day']";break;
+			case("event locations"): Formedxpath = "//p[text()='event locations']";break;
 
 		}
+
+			driver.findElement(By.xpath(Formedxpath)).click();
+			//Reusable_Functions.waitForPageLoaded(driver);
+
 
 	}
 }

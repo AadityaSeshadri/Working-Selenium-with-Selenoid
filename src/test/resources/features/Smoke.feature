@@ -13,14 +13,15 @@ Feature: Login to Facebook and Check for Homepage
     |2017|330|3893|860|226|
     And Validate Navigations When Links from List Graph clicked
     |repos per week|repositories updated per week|
-    |events per week|repositories updated per week|
-    |activities per programming languages|repositories updated per week|
-    |active user groups|repositories updated per week|
-    |active repositories|repositories updated per week|
-    |repositories per programming language|repositories updated per week|
-    |event day of week|repositories updated per week|
-    |event per week of month|repositories updated per week|
-    |event duration|repositories updated per week|
-    |event time of day|repositories updated per week|
-    |event locations|repositories updated per week|
+    |activities per programming languages|update activities per programming languages|
+    |active user groups|active user groups with > 5 events|
+    |active repositories|active repos with > 10 updates|
+    |repositories per programming language|repositories per programming languages|
+    |event day of week|events by day of week|
+    |event per week of month|events per week of month|
+    |event duration|events by duration|
+    |event time of day|events by time of day|
+    |event locations|popular event locations|
+
+
 
