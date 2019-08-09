@@ -15,7 +15,7 @@ import java.util.List;
 //import pageobjects.Log;;
 //public class HomePage extends BaseClass{
 	public class LandingPage {
-	  final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(HomePage.class);
+	  final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(LandingPage.class);
 	 //WebDriver driver = Hooks.driver;
 	WebDriverWait wait  ;
 	//****************Place required to change when xpath or property changes
