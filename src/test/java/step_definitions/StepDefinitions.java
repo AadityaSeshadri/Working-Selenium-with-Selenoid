@@ -21,8 +21,6 @@ public class StepDefinitions {
     	scenario = Hooks.scenario;
         PageFactory.initElements(driver, LandingPage.class);
 
-
-
     }
 
     @Given("^User Navigates to Landing Page$")
