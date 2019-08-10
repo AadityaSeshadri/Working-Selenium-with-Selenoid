@@ -24,18 +24,6 @@ public class Hooks {
     public static String OS_Name;
     @Before("@Smoke")
     public void openBrowser(Scenario scenario) throws IOException {
-        /*File file = new File(System.getProperty("user.dir") + "/ExecutionLog.log");
-        if(file.exists())
-        {
-            file.delete();
-            logger.info("Execution File deleted successfully");
-        } 
-        else
-        {
-            logger.info("Execution File Not Present in Path");
-        }
-        */
-
         Hooks.scenario = scenario;
         DesiredCapabilities capabilities = new DesiredCapabilities();
          //***********Chrome*********** */
