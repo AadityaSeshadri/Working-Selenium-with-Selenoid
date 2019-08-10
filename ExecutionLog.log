@@ -1457,4 +1457,229 @@
  [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
  [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
  [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Smoke Scenario 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Search Criteria- Need to Fill Search Text under When Step and Expected list to appear in Then Step with Yes or No 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [EnterTextBox] Function ----EnterTextBox----Element----------Value entered as-------events 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Social Links Connectivity to External System 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Suggestions Link point to Twitter Page 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Suggestions Link point to Twitter Page 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Count of Available Languages in Repositories 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Click from Repository Page Navigates to Github 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Count and Groups Name of Active Users Group 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Clicking on Group Name Navigates to Meet up Website 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Count and Groups Name of Active Users Group 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Smoke Scenario 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Smoke Scenario 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Smoke Scenario 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Smoke Scenario 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Search Criteria- Need to Fill Search Text under When Step and Expected list to appear in Then Step with Yes or No 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [EnterTextBox] Function ----EnterTextBox----Element----------Value entered as-------events 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Social Links Connectivity to External System 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Suggestions Link point to Twitter Page 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Pull Request Link point to Twitter Page 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Count of Available Languages in Repositories 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Click from Repository Page Navigates to Github 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Count and Groups Name of Active Users Group 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Clicking on Group Name Navigates to Meet up Website 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Count and Groups Name of Active Users Group 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Count and Groups Name of Active Users Group 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@ 
+ [INFO] [Logger] [openBrowser] @@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@Validate Count and Groups Name of Active Users Group 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Logger] [embedScreenshot] ****************************Execution Finished************************** 
  
