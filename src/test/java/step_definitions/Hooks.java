@@ -39,11 +39,11 @@ public class Hooks {
         Hooks.scenario = scenario;
         DesiredCapabilities capabilities = new DesiredCapabilities();
          //***********Chrome*********** */
-        capabilities.setBrowserName("chrome");
-        capabilities.setVersion("76.0");
+        //capabilities.setBrowserName("chrome");
+        //capabilities.setVersion("76.0");
         //***********FireFox***********/
-        //capabilities.setBrowserName("firefox");
-        //capabilities.setVersion("68.0");
+        capabilities.setBrowserName("firefox");
+        capabilities.setVersion("68.0");
         //***********Opera*********** */
         /*capabilities.setBrowserName("chrome");
         capabilities.setVersion("62.0");*/
