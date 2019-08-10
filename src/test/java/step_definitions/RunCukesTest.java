@@ -18,13 +18,13 @@ import org.junit.runner.RunWith;
 		usageReport = true,
 		toPDF = true,
 		//excludeCoverageTags = {"@flaky" },
-		includeCoverageTags = {"@Smoke" },
+		//includeCoverageTags = {"@Smoke" },
 		outputFolder = "target/")
 
 @CucumberOptions(
 		features = "classpath:features",
 		plugin = {"html:target/cucumber-html-report", "json:target/cucumber.json", "pretty:target/cucumber-pretty.txt","usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml","com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-ExtendedReports/report.html"},
-		tags = {"@Smoke"},
+		//tags = {"@Smoke"},
 		monochrome = true
 		)
 public class RunCukesTest{

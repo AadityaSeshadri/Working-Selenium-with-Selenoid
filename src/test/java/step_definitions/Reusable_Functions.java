@@ -95,6 +95,7 @@ public class Reusable_Functions {
 	public static void Navigate(WebDriver driver, String uRL) {
        driver.get(uRL);
        driver.manage().window().maximize() ;
+        log.info("Function ----Navigate----Navigated to Page and Maximized");
 
     }
     
@@ -117,6 +118,8 @@ public class Reusable_Functions {
     public static void ValidatePageTitle(WebDriver driver, String pageTitle) {
         //System.out.println("Title of Page --------"+ driver.getTitle());
         driver.getTitle().contains(pageTitle);
+        log.info("Function ----ValidatePageTitle----Page Title is Validated");
+
 
     }
 }

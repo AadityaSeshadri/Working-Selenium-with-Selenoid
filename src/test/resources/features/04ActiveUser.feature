@@ -3,7 +3,6 @@ Feature: Active User Group Page Validations
   Given User Navigates to Landing Page
   |https://webuildsg.github.io/data/|We Build SG Data|
   When Navigate to ActiveUser Page
-  @Smoke
   Scenario: Validate Count and Groups Name of Active Users Group-Failure of One Data Variant Expected
   Description: Validation of When User Clicks Active User Group ,System shows total count of Active User Group ,Group Name and Number of Users
   Things to Consider-

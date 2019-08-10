@@ -31,6 +31,7 @@ import java.util.List;
 
 	public static void ValidatePageNavigation(WebDriver driver,String Text)
 	{
+		log.info("Class ------ ActiveUserGroupsPage       Function -------ValidatePageNavigation");
 		Reusable_Functions.waitForPageLoaded(driver);
 		Assert.assertEquals(Lbl_PageTitle.getText(),Text);
 		driver.navigate().back();
@@ -38,10 +39,8 @@ import java.util.List;
 	}
 
     public static void CheckRepositoryPageLanguagesCount(WebDriver driver,WebDriverWait wait, Integer Count) {
+		log.info("Class ------ ActiveUserGroupsPage       Function -------CheckRepositoryPageLanguagesCount");
 		Reusable_Functions.waitForPageLoaded(driver);
-
-		//Assert.assertTrue(List_ActiveUserGroups.isDisplayed());
-		//WebElement rootElement = driver.findElement(By.xpath("//div[@class='graph']"));
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='graph']"))));
 		List<WebElement> options = driver.findElements(By.xpath("//div[@class='graph']//div[@class='bar']"));
 		Assert.assertSame(Count, options.size());
@@ -49,23 +48,23 @@ import java.util.List;
 
 	public static void ValidateGroupInfo(WebDriverWait wait, WebDriver driver, String Index,String GroupName, String NumberofActiveUsers)
 	{
+		log.info("Class ------ ActiveUserGroupsPage       Function -------ValidateGroupInfo");
 		Assert.assertEquals(GroupName,driver.findElement(By.xpath("//div[@class='graph']/div[@class='bar']["+Index+"]/div[@class='graph-label']/a")).getText());
 		Assert.assertEquals(NumberofActiveUsers,driver.findElement(By.xpath("//div[@class='graph']/div[@class='bar']["+Index+"]/div[@class='graph-bar']")).getText());
 	}
 
 	public static void ClickGroupName(WebDriver driver, WebDriverWait wait, String GroupName) {
+		log.info("Class ------ ActiveUserGroupsPage       Function -------ClickGroupName");
 		driver.findElement(By.xpath("//a[contains(text(),'"+GroupName+"')]")).click();
 	}
 
 	public static void ValidateNavigationtoMeetup(WebDriver driver, WebDriverWait wait, String MeetupGroupName) {
-		//Reusable_Functions.waitForPageLoaded(driver);
+		log.info("Class ------ ActiveUserGroupsPage       Function -------ValidateNavigationtoMeetup");
 		ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
 		driver.switchTo().window(tabs2.get(1));
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[@class='groupHomeHeader-groupNameLink']"))));
-		//Assert.assertEquals(MeetupGroupName,driver.findElement(By.xpath("//a[@class='groupHomeHeader-groupNameLink']")).getText());
 
 	}
-	//****************Place required to change when xpath or property changes
 	
 }
 		

@@ -15,12 +15,10 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-//import pageobjects.Log;;
-//public class HomePage extends BaseClass{
+
 	public class RepoPerProgramingLanguagePage
 {
 	final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(RepoPerProgramingLanguagePage.class);
-	//WebDriver driver = Hooks.driver;
 	WebDriverWait wait;
 
 	@FindBy(how = How.XPATH, using = "//*[text()='repositories per programming languages']")
@@ -31,6 +29,7 @@ import static org.junit.Assert.assertEquals;
 	public static WebElement List_ReposPerProgrammingLanguage;
 
 	public static void ValidatePageNavigation(WebDriver driver, String Text) {
+		log.info("Class ------ RepoPerProgramingLanguagePage       Function -------ValidatePageNavigation");
 		Reusable_Functions.waitForPageLoaded(driver);
 		assertEquals(Lbl_PageTitle.getText(), Text);
 		driver.navigate().back();
@@ -38,6 +37,7 @@ import static org.junit.Assert.assertEquals;
 	}
 
 	public static void CheckRepositoryPageLanguagesCount(WebDriver driver, Integer Count) {
+		log.info("Class ------ RepoPerProgramingLanguagePage       Function -------CheckRepositoryPageLanguagesCount");
 		Reusable_Functions.waitForPageLoaded(driver);
 		Assert.assertTrue(List_SelectLanguage.isDisplayed());
 		List<WebElement> options = List_SelectLanguage.findElements(By.tagName("li"));
@@ -45,6 +45,7 @@ import static org.junit.Assert.assertEquals;
 	}
 
 	public static void ValidateLanguageWithIndex(WebDriverWait wait, WebDriver driver, String Index, String LanguageName, String RepoCount) {
+		log.info("Class ------ RepoPerProgramingLanguagePage       Function -------ValidateLanguageWithIndex");
 		if (Integer.parseInt(RepoCount) != 0) {
 			Assert.assertTrue(driver.findElement(By.xpath("//ul[@id='select-language']/li[" + Index + "]")).getText().contains(LanguageName));
 
@@ -58,9 +59,9 @@ import static org.junit.Assert.assertEquals;
 	}
 
 	public static void SelectProgrammingLanguage(WebDriver driver, String SelectedProgramingLanguage) {
+		log.info("Class ------ RepoPerProgramingLanguagePage       Function -------SelectProgrammingLanguage");
 		String xpath;
 		xpath = "//label[@id='language-" + SelectedProgramingLanguage.toLowerCase() + "']";
-		System.out.println("Formed xpath++++++++++++"+ xpath);
 		driver.findElement(By.xpath(xpath)).click();
 
 	}

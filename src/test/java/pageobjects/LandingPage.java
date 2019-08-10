@@ -13,13 +13,10 @@ import step_definitions.Reusable_Functions;
 
 import java.util.List;
 
-//import pageobjects.Log;;
-//public class HomePage extends BaseClass{
+
 	public class LandingPage {
 	  final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(LandingPage.class);
-	 //WebDriver driver = Hooks.driver;
 	WebDriverWait wait  ;
-	//****************Place required to change when xpath or property changes
 	@FindBy(how=How.ID, using="search")
 	public static WebElement Lnk_Home;
 	@FindBy(how=How.XPATH, using="//ul[@class='list-graph']")
@@ -41,7 +38,7 @@ import java.util.List;
 
 	public static void Navigate_LandingPage(WebDriver driver,String URL,String PageTitle)
 	{
-		//Hooks.driver.get(URL);
+		log.info("Class ------ LandingPage       Function -------Navigate_LandingPage");
 		Reusable_Functions.waitForPageLoaded(driver);
 		Reusable_Functions.Navigate(driver,URL);
 		Reusable_Functions.ValidatePageTitle(driver,PageTitle);
@@ -52,6 +49,7 @@ import java.util.List;
 	
 	public static void check_Landing_Page_ListCount(WebDriver driver,int Count)
 	{
+		log.info("Class ------ LandingPage       Function -------check_Landing_Page_ListCount");
 		Reusable_Functions.waitForPageLoaded(driver);
 		Assert.assertTrue(Lnk_Home.isDisplayed());
 		List<WebElement> options = Lst_Graph.findElements(By.tagName("li"));
@@ -59,9 +57,8 @@ import java.util.List;
 
 	}
 
-	//div[@id='repos-per-week' and @class='graph']
 	public static void check_Landing_Page_ListElement(WebDriver driver, List list) {
-
+		log.info("Class ------ LandingPage       Function -------check_Landing_Page_ListElement");
 		List<WebElement> Elements = Lst_Graph.findElements(By.tagName("li"));
 		for(int i=0;i<Elements.size();i++)
 		{
@@ -73,6 +70,7 @@ import java.util.List;
 
 	public static void check_Landing_Page_YearlyReport(WebDriver driver, String Year, String OpenSourceRepoCount, String CountofCommits, String CountofEvents, String CountofGroups)
 	{
+		log.info("Class ------ LandingPage       Function -------check_Landing_Page_YearlyReport");
 		String Xpath_Total_OpenSource_Repos = "total-repos-";
 		String Xpath_Total_Updates = "total-updates-";
 		String Xpath_Total_Events = "total-events-";
@@ -88,6 +86,7 @@ import java.util.List;
 
 
 	public static void Navigate_listItems(WebDriver driver,String ListItem) {
+		log.info("Class ------ LandingPage       Function -------Navigate_listItems");
 		String Formedxpath = "";
 		switch (ListItem)
 		{
@@ -104,19 +103,17 @@ import java.util.List;
 			case("event locations"): Formedxpath = "//p[text()='event locations']";break;
 
 		}
-
 			driver.findElement(By.xpath(Formedxpath)).click();
-			//Reusable_Functions.waitForPageLoaded(driver);
-
-
 	}
 
 	public static void EnterSearchValue(WebDriver driver,String searchtext)
 	{
+		log.info("Class ------ LandingPage       Function -------EnterSearchValue");
 		Reusable_Functions.EnterTextBox(Txt_Search,searchtext);
 	}
 
 	public static String FormXpathforSearchCriteria(String ListItem) {
+		log.info("Class ------ LandingPage       Function -------FormXpathforSearchCriteria");
 		String Formedxpath="";
 		System.out.println("***************Value of List Item **********"+ ListItem);
 		switch (ListItem)
@@ -138,6 +135,7 @@ import java.util.List;
 	}
 
 	public static void ValidateLinksNavigation(DataTable table,WebDriver driver,WebDriverWait wait) {
+		log.info("Class ------ LandingPage       Function -------ValidateLinksNavigation");
 		int i;
 		int j = 1;
 		List<String> list = table.asList(String.class);
@@ -193,6 +191,7 @@ import java.util.List;
 
 	public static void ValidateSocialMediaConnectivityInFooter(WebDriver driver, WebDriverWait wait)
 	{
+		log.info("Class ------ LandingPage       Function -------ValidateSocialMediaConnectivityInFooter");
 		driver.findElement(By.className("footer-twitter")).click();
 		Reusable_Functions.waitForPageLoaded(driver);
 		Assert.assertTrue(driver.getTitle().contains("We Build SG (@webuildsg) | Twitter"));
@@ -227,49 +226,51 @@ import java.util.List;
 		driver.navigate().back();
 		Reusable_Functions.waitForPageLoaded(driver);
 
-		//We Build SG (@webuildsg) | Twitter
-		//We Build SG - Home | Facebook
-		//We Build SG ? GitHub
-		//We Build SG LIVE - powered by FeedBurner
-		//?We Build SG LIVE on Apple Podcasts
 	}
 
 
 	public static void ClickSuggestionLink(WebDriver driver) {
+		log.info("Class ------ LandingPage       Function -------ClickSuggestionLink");
 		Lnk_Search.click();
 		Reusable_Functions.waitForPageLoaded(driver);
 
 	}
 
 	public static void PullRequestLink(WebDriver driver) {
+		log.info("Class ------ LandingPage       Function -------PullRequestLink");
 		Lnk_PullRequests.click();
 		Reusable_Functions.waitForPageLoaded(driver);
 	}
 
 	public static void ValidateTwitterNavigation(WebDriver driver) {
+		log.info("Class ------ LandingPage       Function -------ValidateTwitterNavigation");
 		Assert.assertTrue(driver.getTitle().contains("We Build SG (@webuildsg) | Twitter"));
 		driver.navigate().back();
 		Reusable_Functions.waitForPageLoaded(driver);
 	}
 
 	public static void ValidateGithubNavigation(WebDriver driver) {
+		log.info("Class ------ LandingPage       Function -------ValidateGithubNavigation");
 		Assert.assertTrue(driver.getTitle().contains("GitHub"));
 		driver.navigate().back();
 		Reusable_Functions.waitForPageLoaded(driver);
 	}
 
 	public static void NavigatetoRepositoryPage(WebDriver driver) {
+		log.info("Class ------ LandingPage       Function -------NavigatetoRepositoryPage");
 		Lnk_RepositoryPerProgrammingLanguage.click();
 		Reusable_Functions.waitForPageLoaded(driver);
 	}
 
 	public static void NavigatetoActiveUserPage(WebDriver driver) {
+		log.info("Class ------ LandingPage       Function -------NavigatetoActiveUserPage");
 		Lnk_ActiveUser.click();
 		Reusable_Functions.waitForPageLoaded(driver);
 
 	}
 
 	public static void NavigatetoEventLocationPage(WebDriver driver) {
+		log.info("Class ------ LandingPage       Function -------NavigatetoEventLocationPage");
 		Lnk_EventLocation.click();
 		Reusable_Functions.waitForPageLoaded(driver);
 

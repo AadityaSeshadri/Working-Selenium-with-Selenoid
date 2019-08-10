@@ -24,19 +24,15 @@ public class Hooks {
     public static String OS_Name;
     @Before
     public void openBrowser(Scenario scenario) throws IOException {
-         //wait = new WebDriverWait(driver, 30);
-       // logger.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@"+ System.getProperty("Browser"));
-        //System.out.println("&&&&&&&&&&&&&&&&&&Browser Value&&&&&&&&&&&&&&&&&" + System.getProperty("Browser"));
         File file = new File(System.getProperty("user.dir") + "/ExecutionLog.log");
         if(file.exists())
-        { 
-            System.out.println("File deleted successfully"); 
+        {
+            logger.info("Execution File deleted successfully");
         } 
         else
         {
-            System.out.println("File Not Present"); 
+            logger.info("Execution File Not Present in Path");
         }
-        System.out.println("*********************Inside Before********************");
         Hooks.scenario = scenario;
         DesiredCapabilities capabilities = new DesiredCapabilities();
          //***********Chrome*********** */
@@ -51,15 +47,11 @@ public class Hooks {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         capabilities.setCapability("enableLog", true);
-        logger.info("@@@@@@@@@@@@@Capabilities Set@@@@@@@@@@@@@@@@@");
         driver = new RemoteWebDriver(
                 //URI.create("http://selenoid:4444/wd/hub").toURL(),
                  URI.create("http://127.0.0.1:4444/wd/hub").toURL(),
                 capabilities);
-        System.out.println("**************************Driver Initialized***************************************");
         ;
-        logger.info("@@@@@@@@@@@@@Driver Initialized@@@@@@@@@@@@@@@@@");
-        logger.info("@@@@@@@@@@@@@@Excecution  started for the scenario@@@@@@@@@@@" + scenario.getName());
         wait = new WebDriverWait(driver,20);
         
     }
@@ -83,7 +75,6 @@ public class Hooks {
         }
 
         driver.quit();
-        logger.info("****************************Execution Finished**************************");
     }
    
 }

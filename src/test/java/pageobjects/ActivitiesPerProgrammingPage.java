@@ -9,8 +9,6 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import step_definitions.Reusable_Functions;
 
-//import pageobjects.Log;;
-//public class HomePage extends BaseClass{
 	public class ActivitiesPerProgrammingPage {
 	  final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(ActivitiesPerProgrammingPage.class);
 	 //WebDriver driver = Hooks.driver;
@@ -20,12 +18,12 @@ import step_definitions.Reusable_Functions;
 
 	public static void ValidatePageNavigation(WebDriver driver,String Text)
 	{
+		log.info("Class ------ ActivitiesPerProgrammingPage       Function -------ValidatePageNavigation");
 		Reusable_Functions.waitForPageLoaded(driver);
 		Assert.assertEquals(Lbl_PageTitle.getText(),Text);
 		driver.navigate().back();
 
 	}
-    //****************Place required to change when xpath or property changes
 	
 }
 		

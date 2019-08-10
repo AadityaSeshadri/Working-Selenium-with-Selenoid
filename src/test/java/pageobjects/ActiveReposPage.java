@@ -21,6 +21,7 @@ import step_definitions.Reusable_Functions;
 
 	public static void ValidatePageNavigation(WebDriver driver,String Text)
 	{
+		log.info("Class ------ ActiveReposPage       Function -------ValidatePageNavigation");
 		Reusable_Functions.waitForPageLoaded(driver);
 		Assert.assertEquals(Lbl_PageTitle.getText(),Text);
 		driver.navigate().back();
