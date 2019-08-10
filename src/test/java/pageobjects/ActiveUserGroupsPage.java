@@ -7,9 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import step_definitions.Reusable_Functions;
 
+import java.util.ArrayList;
 import java.util.List;
 
 //import pageobjects.Log;;
@@ -35,15 +37,35 @@ import java.util.List;
 
 	}
 
-    public static void CheckRepositoryPageLanguagesCount(WebDriver driver, Integer Count) {
+    public static void CheckRepositoryPageLanguagesCount(WebDriver driver,WebDriverWait wait, Integer Count) {
 		Reusable_Functions.waitForPageLoaded(driver);
+
 		//Assert.assertTrue(List_ActiveUserGroups.isDisplayed());
 		//WebElement rootElement = driver.findElement(By.xpath("//div[@class='graph']"));
-
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='graph']"))));
 		List<WebElement> options = driver.findElements(By.xpath("//div[@class='graph']//div[@class='bar']"));
 		Assert.assertSame(Count, options.size());
     }
-    //****************Place required to change when xpath or property changes
+
+	public static void ValidateGroupInfo(WebDriverWait wait, WebDriver driver, String Index,String GroupName, String NumberofActiveUsers)
+	{
+		Assert.assertEquals(GroupName,driver.findElement(By.xpath("//div[@class='graph']/div[@class='bar']["+Index+"]/div[@class='graph-label']/a")).getText());
+		Assert.assertEquals(NumberofActiveUsers,driver.findElement(By.xpath("//div[@class='graph']/div[@class='bar']["+Index+"]/div[@class='graph-bar']")).getText());
+	}
+
+	public static void ClickGroupName(WebDriver driver, WebDriverWait wait, String GroupName) {
+		driver.findElement(By.xpath("//a[contains(text(),'"+GroupName+"')]")).click();
+	}
+
+	public static void ValidateNavigationtoMeetup(WebDriver driver, WebDriverWait wait, String MeetupGroupName) {
+		//Reusable_Functions.waitForPageLoaded(driver);
+		ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
+		driver.switchTo().window(tabs2.get(1));
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[@class='groupHomeHeader-groupNameLink']"))));
+		//Assert.assertEquals(MeetupGroupName,driver.findElement(By.xpath("//a[@class='groupHomeHeader-groupNameLink']")).getText());
+
+	}
+	//****************Place required to change when xpath or property changes
 	
 }
 		

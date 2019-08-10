@@ -139,6 +139,13 @@ public class StepDefinitions {
         LandingPage.NavigatetoRepositoryPage(driver);
     }
 
+    @When("^Navigate to EventLocation Page$")
+    public void NavigateToEventLocation() throws Throwable {
+        LandingPage.NavigatetoEventLocationPage(driver);
+    }
+
+
+
     @Then("^Validate Expected Number of Available Languages$")
     public void Validates_CountofLanguages(DataTable table) throws Throwable {
         List<Integer> list = table.asList(int.class);
@@ -148,7 +155,6 @@ public class StepDefinitions {
     @And("^Validate Languages Names and Repositories Under Each Language$")
     public void ValidateLanguageNames(DataTable table) throws Throwable {
         int i;
-
         List<String> list = table.asList(String.class);
         System.out.println("|||||||||||||||List Size||||||||"+list.size());
        for (i=0;i==(list.size());i+=3)
@@ -175,10 +181,42 @@ public class StepDefinitions {
     @Then("^Validate Total Count of Active User Group$")
     public void Validates_CountofActiveUserGroups(DataTable table) throws Throwable {
         List<Integer> list = table.asList(int.class);
-        ActiveUserGroupsPage.CheckRepositoryPageLanguagesCount(driver,list.get(0));
+        ActiveUserGroupsPage.CheckRepositoryPageLanguagesCount(driver,wait,list.get(0));
+
+    }
+    @And("^Validate Group Name Count of Users and Last Updated DateTime$")
+    public void ValidateGroupInfo(DataTable table) throws Throwable {
+        int i;
+        List<String> list = table.asList(String.class);
+        System.out.println("|||||||||||||||List Size||||||||"+list.size());
+        //System.out.println("-------------------Before For Loop-------------");
+        for (i=0;i<=(list.size()-1);i+=4)
+        {
+            //System.out.println("-------------------Inside For Loop-------------");
+            ActiveUserGroupsPage.ValidateGroupInfo(wait,driver,list.get(i),list.get(i+1),list.get(i+2));
+        }
+    }
+    @When("^Clicked on Group Name$")
+    public void ClickGroupName(DataTable table) throws Throwable {
+        List<String > list = table.asList(String.class);
+        ActiveUserGroupsPage.ClickGroupName(driver,wait,list.get(0));
+
+    }
+    @Then("^Navigated to Meetup Website$")
+    public void NavigatedtoMeetup(DataTable table) throws Throwable {
+        List<String > list = table.asList(String.class);
+        ActiveUserGroupsPage.ValidateNavigationtoMeetup(driver,wait,list.get(0));
 
     }
 
+    @When("^Validate Popular Event Location Map$")
+    public void ValidatePopularEventLocation() throws Throwable {
+        EventLocationPage.ValidateMapExistence(driver,wait);
+    }
 
-
+    @And("^Validate Map Script Details$")
+    public void ValidateMapDetails(DataTable table) throws Throwable {
+        List<String > list = table.asList(String.class);
+        EventLocationPage.ValidateMapDetails(driver,wait,list.get(0));
+    }
 }

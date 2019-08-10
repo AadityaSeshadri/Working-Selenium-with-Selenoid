@@ -34,7 +34,8 @@ import java.util.List;
 	public static WebElement Lnk_RepositoryPerProgrammingLanguage;
 	@FindBy(how=How.XPATH, using="//p[text()='active user groups']")
 	public static WebElement Lnk_ActiveUser;
-
+	@FindBy(how=How.XPATH, using="//p[text()='event locations']")
+	public static WebElement Lnk_EventLocation;
 	//****************Place required to change when xpath or property changes
 
 
@@ -264,6 +265,12 @@ import java.util.List;
 
 	public static void NavigatetoActiveUserPage(WebDriver driver) {
 		Lnk_ActiveUser.click();
+		Reusable_Functions.waitForPageLoaded(driver);
+
+	}
+
+	public static void NavigatetoEventLocationPage(WebDriver driver) {
+		Lnk_EventLocation.click();
 		Reusable_Functions.waitForPageLoaded(driver);
 
 	}
