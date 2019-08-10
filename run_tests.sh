@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+#set -e
 
 
 # Waiting for selenoid to start
@@ -29,6 +29,5 @@ docker-compose exec seleniumcode mvn clean test
 #docker cp cucumber-jvm-template-master_seleniumcode_1:/cucumber-jvm-template-master/ExecutionLog.log/ /private/tmp
 docker cp cucumber-jvm-template-master_seleniumcode_1:/cucumber-jvm-template-master/target/ .
 docker cp cucumber-jvm-template-master_seleniumcode_1:/cucumber-jvm-template-master/ExecutionLog.log .
-
 
 

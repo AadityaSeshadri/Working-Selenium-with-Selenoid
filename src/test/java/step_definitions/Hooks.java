@@ -22,17 +22,20 @@ public class Hooks {
     public static WebDriverWait wait;
     public static Scenario scenario;
     public static String OS_Name;
-    @Before
+    @Before("@Smoke")
     public void openBrowser(Scenario scenario) throws IOException {
-        File file = new File(System.getProperty("user.dir") + "/ExecutionLog.log");
+        /*File file = new File(System.getProperty("user.dir") + "/ExecutionLog.log");
         if(file.exists())
         {
+            file.delete();
             logger.info("Execution File deleted successfully");
         } 
         else
         {
             logger.info("Execution File Not Present in Path");
         }
+        */
+
         Hooks.scenario = scenario;
         DesiredCapabilities capabilities = new DesiredCapabilities();
          //***********Chrome*********** */
@@ -48,15 +51,15 @@ public class Hooks {
         capabilities.setCapability("enableVideo", true);
         capabilities.setCapability("enableLog", true);
         driver = new RemoteWebDriver(
-                //URI.create("http://selenoid:4444/wd/hub").toURL(),
-                 URI.create("http://127.0.0.1:4444/wd/hub").toURL(),
+                URI.create("http://selenoid:4444/wd/hub").toURL(),
+                 //URI.create("http://127.0.0.1:4444/wd/hub").toURL(),
                 capabilities);
         ;
         wait = new WebDriverWait(driver,20);
         
     }
 
-    @After(order = 1)
+    @After("@EventLocation")
     public void embedScreenshot(Scenario scenario) {
 
         if (scenario.isFailed()) {

@@ -141,11 +141,9 @@ import java.util.List;
 		List<String> list = table.asList(String.class);
 		for (i = 0; i <= list.size() - 2; i += 2)
 		{
-			System.out.println("Value of I insode i loop ++++++++++++" + i + "+++++++++"+ list.get(i));
 			LandingPage.Navigate_listItems(driver, list.get(i));
 			while (j <= list.size() - 1)
 			{
-				System.out.println("Value of J insode i loop ++++++++++++" + j + "+++++++++"+ list.get(j));
 				switch (list.get(j)) {
 					case ("repositories updated per week"):
 						ReposPerWeekPage.ValidatePageNavigation(wait, driver, list.get(j));
