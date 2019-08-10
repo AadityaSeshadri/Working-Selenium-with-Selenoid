@@ -129,7 +129,12 @@ public class StepDefinitions {
         LandingPage.ValidateGithubNavigation(driver);
     }
 
-    @Then("^Navigate to Repositories Page$")
+    @When("^Navigate to ActiveUser Page$")
+    public void NavigateToActiveUserPage() throws Throwable {
+        LandingPage.NavigatetoActiveUserPage(driver);
+    }
+
+    @When("^Navigate to Repositories Page$")
     public void NavigateToRepositoryPage() throws Throwable {
         LandingPage.NavigatetoRepositoryPage(driver);
     }
@@ -140,7 +145,7 @@ public class StepDefinitions {
         RepoPerProgramingLanguagePage.CheckRepositoryPageLanguagesCount(driver,list.get(0));
 
     }
-    @And("^Validate Languages Names$")
+    @And("^Validate Languages Names and Repositories Under Each Language$")
     public void ValidateLanguageNames(DataTable table) throws Throwable {
         int i;
 
@@ -165,6 +170,13 @@ public class StepDefinitions {
     public void NavigatedtoGithub(DataTable table) throws Throwable {
         List<String> list = table.asList(String.class);
         RepoPerProgramingLanguagePage.VaidateGithubLink(driver,list.get(0));
+    }
+
+    @Then("^Validate Total Count of Active User Group$")
+    public void Validates_CountofActiveUserGroups(DataTable table) throws Throwable {
+        List<Integer> list = table.asList(int.class);
+        ActiveUserGroupsPage.CheckRepositoryPageLanguagesCount(driver,list.get(0));
+
     }
 
 

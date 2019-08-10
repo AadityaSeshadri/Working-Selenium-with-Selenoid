@@ -32,6 +32,8 @@ import java.util.List;
 	public static WebElement Lnk_PullRequests;
 	@FindBy(how=How.XPATH, using="//p[text()='repositories per programming language']")
 	public static WebElement Lnk_RepositoryPerProgrammingLanguage;
+	@FindBy(how=How.XPATH, using="//p[text()='active user groups']")
+	public static WebElement Lnk_ActiveUser;
 
 	//****************Place required to change when xpath or property changes
 
@@ -258,7 +260,11 @@ import java.util.List;
 	public static void NavigatetoRepositoryPage(WebDriver driver) {
 		Lnk_RepositoryPerProgrammingLanguage.click();
 		Reusable_Functions.waitForPageLoaded(driver);
+	}
 
+	public static void NavigatetoActiveUserPage(WebDriver driver) {
+		Lnk_ActiveUser.click();
+		Reusable_Functions.waitForPageLoaded(driver);
 
 	}
 }

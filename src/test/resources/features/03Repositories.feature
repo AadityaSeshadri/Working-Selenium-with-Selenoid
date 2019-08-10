@@ -2,11 +2,11 @@ Feature: Login to Facebook and Check for Homepage
   Background:
     Given User Navigates to Landing Page
       |https://webuildsg.github.io/data/|We Build SG Data|
-    Then Navigate to Repositories Page
+    When Navigate to Repositories Page
   Scenario: Validate Count of Available Languages in Repositories
     Then Validate Expected Number of Available Languages
     |20|
-    And Validate Languages Names
+    And Validate Languages Names and Repositories Under Each Language
       |1|C|7|
       |2|C++|17|
       |3|Clojure|6|
@@ -27,7 +27,7 @@ Feature: Login to Facebook and Check for Homepage
       |18|Shell|3       |
       |19|Swift|14      |
       |20|Tex|2         |
-    @Login
+
     Scenario: Validate Click from Repository Page Navigates to Github
       When Select below Programming Language
       |C|
