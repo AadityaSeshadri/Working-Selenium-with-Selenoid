@@ -490,4 +490,161 @@
  [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
  [INFO] [EventLocationPage] [ValidateMapExistence] Class ------ EventLocationPage       Function -------ValidateMapExistence 
  [INFO] [EventLocationPage] [ValidateMapDetails] Class ------ EventLocationPage       Function -------ValidateMapDetails 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [Navigate] Function ----Navigate----Navigated to Page and Maximized 
+ [INFO] [Reusable_Functions] [ValidatePageTitle] Function ----ValidatePageTitle----Page Title is Validated 
+ [INFO] [LandingPage] [check_Landing_Page_ListCount] Class ------ LandingPage       Function -------check_Landing_Page_ListCount 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [check_Landing_Page_ListElement] Class ------ LandingPage       Function -------check_Landing_Page_ListElement 
+ [INFO] [LandingPage] [check_Landing_Page_YearlyReport] Class ------ LandingPage       Function -------check_Landing_Page_YearlyReport 
+ [INFO] [LandingPage] [check_Landing_Page_YearlyReport] Class ------ LandingPage       Function -------check_Landing_Page_YearlyReport 
+ [INFO] [LandingPage] [check_Landing_Page_YearlyReport] Class ------ LandingPage       Function -------check_Landing_Page_YearlyReport 
+ [INFO] [LandingPage] [ValidateLinksNavigation] Class ------ LandingPage       Function -------ValidateLinksNavigation 
+ [INFO] [LandingPage] [Navigate_listItems] Class ------ LandingPage       Function -------Navigate_listItems 
+ [INFO] [ReposPerWeekPage] [ValidatePageNavigation] Class ------ ReposPerWeekPage       Function -------ValidatePageNavigation 
+ [INFO] [LandingPage] [Navigate_listItems] Class ------ LandingPage       Function -------Navigate_listItems 
+ [INFO] [ActivitiesPerProgrammingPage] [ValidatePageNavigation] Class ------ ActivitiesPerProgrammingPage       Function -------ValidatePageNavigation 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_listItems] Class ------ LandingPage       Function -------Navigate_listItems 
+ [INFO] [ActiveUserGroupsPage] [ValidatePageNavigation] Class ------ ActiveUserGroupsPage       Function -------ValidatePageNavigation 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_listItems] Class ------ LandingPage       Function -------Navigate_listItems 
+ [INFO] [ActiveReposPage] [ValidatePageNavigation] Class ------ ActiveReposPage       Function -------ValidatePageNavigation 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_listItems] Class ------ LandingPage       Function -------Navigate_listItems 
+ [INFO] [RepoPerProgramingLanguagePage] [ValidatePageNavigation] Class ------ RepoPerProgramingLanguagePage       Function -------ValidatePageNavigation 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_listItems] Class ------ LandingPage       Function -------Navigate_listItems 
+ [INFO] [EventDayofWeekPage] [ValidatePageNavigation] Class ------ EventDayofWeekPage       Function -------ValidatePageNavigation 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_listItems] Class ------ LandingPage       Function -------Navigate_listItems 
+ [INFO] [EventPerWeekofMonthPage] [ValidatePageNavigation] Class ------ EventPerWeekofMonthPage       Function -------ValidatePageNavigation 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_listItems] Class ------ LandingPage       Function -------Navigate_listItems 
+ [INFO] [EventDurationPage] [ValidatePageNavigation] Class ------ EventDurationPage       Function -------ValidatePageNavigation 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_listItems] Class ------ LandingPage       Function -------Navigate_listItems 
+ [INFO] [EventTimeOfDayPage] [ValidatePageNavigation] Class ------ EventTimeOfDayPage       Function -------ValidatePageNavigation 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_listItems] Class ------ LandingPage       Function -------Navigate_listItems 
+ [INFO] [EventLocationPage] [ValidatePageNavigation] Class ------ EventLocationPage       Function -------ValidatePageNavigation 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [Navigate] Function ----Navigate----Navigated to Page and Maximized 
+ [INFO] [Reusable_Functions] [ValidatePageTitle] Function ----ValidatePageTitle----Page Title is Validated 
+ [INFO] [LandingPage] [EnterSearchValue] Class ------ LandingPage       Function -------EnterSearchValue 
+ [INFO] [Reusable_Functions] [EnterTextBox] Function ----EnterTextBox----Element----------Value entered as-------events 
+ [INFO] [LandingPage] [FormXpathforSearchCriteria] Class ------ LandingPage       Function -------FormXpathforSearchCriteria 
+ [INFO] [LandingPage] [FormXpathforSearchCriteria] Class ------ LandingPage       Function -------FormXpathforSearchCriteria 
+ [INFO] [LandingPage] [FormXpathforSearchCriteria] Class ------ LandingPage       Function -------FormXpathforSearchCriteria 
+ [INFO] [LandingPage] [FormXpathforSearchCriteria] Class ------ LandingPage       Function -------FormXpathforSearchCriteria 
+ [INFO] [LandingPage] [FormXpathforSearchCriteria] Class ------ LandingPage       Function -------FormXpathforSearchCriteria 
+ [INFO] [LandingPage] [FormXpathforSearchCriteria] Class ------ LandingPage       Function -------FormXpathforSearchCriteria 
+ [INFO] [LandingPage] [FormXpathforSearchCriteria] Class ------ LandingPage       Function -------FormXpathforSearchCriteria 
+ [INFO] [LandingPage] [FormXpathforSearchCriteria] Class ------ LandingPage       Function -------FormXpathforSearchCriteria 
+ [INFO] [LandingPage] [FormXpathforSearchCriteria] Class ------ LandingPage       Function -------FormXpathforSearchCriteria 
+ [INFO] [LandingPage] [FormXpathforSearchCriteria] Class ------ LandingPage       Function -------FormXpathforSearchCriteria 
+ [INFO] [LandingPage] [FormXpathforSearchCriteria] Class ------ LandingPage       Function -------FormXpathforSearchCriteria 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [Navigate] Function ----Navigate----Navigated to Page and Maximized 
+ [INFO] [Reusable_Functions] [ValidatePageTitle] Function ----ValidatePageTitle----Page Title is Validated 
+ [INFO] [LandingPage] [ValidateSocialMediaConnectivityInFooter] Class ------ LandingPage       Function -------ValidateSocialMediaConnectivityInFooter 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [Navigate] Function ----Navigate----Navigated to Page and Maximized 
+ [INFO] [Reusable_Functions] [ValidatePageTitle] Function ----ValidatePageTitle----Page Title is Validated 
+ [INFO] [LandingPage] [ClickSuggestionLink] Class ------ LandingPage       Function -------ClickSuggestionLink 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [ValidateTwitterNavigation] Class ------ LandingPage       Function -------ValidateTwitterNavigation 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [Navigate] Function ----Navigate----Navigated to Page and Maximized 
+ [INFO] [Reusable_Functions] [ValidatePageTitle] Function ----ValidatePageTitle----Page Title is Validated 
+ [INFO] [LandingPage] [PullRequestLink] Class ------ LandingPage       Function -------PullRequestLink 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [ValidateGithubNavigation] Class ------ LandingPage       Function -------ValidateGithubNavigation 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [Navigate] Function ----Navigate----Navigated to Page and Maximized 
+ [INFO] [Reusable_Functions] [ValidatePageTitle] Function ----ValidatePageTitle----Page Title is Validated 
+ [INFO] [LandingPage] [NavigatetoRepositoryPage] Class ------ LandingPage       Function -------NavigatetoRepositoryPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [RepoPerProgramingLanguagePage] [CheckRepositoryPageLanguagesCount] Class ------ RepoPerProgramingLanguagePage       Function -------CheckRepositoryPageLanguagesCount 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [Navigate] Function ----Navigate----Navigated to Page and Maximized 
+ [INFO] [Reusable_Functions] [ValidatePageTitle] Function ----ValidatePageTitle----Page Title is Validated 
+ [INFO] [LandingPage] [NavigatetoRepositoryPage] Class ------ LandingPage       Function -------NavigatetoRepositoryPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [RepoPerProgramingLanguagePage] [SelectProgrammingLanguage] Class ------ RepoPerProgramingLanguagePage       Function -------SelectProgrammingLanguage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [Navigate] Function ----Navigate----Navigated to Page and Maximized 
+ [INFO] [Reusable_Functions] [ValidatePageTitle] Function ----ValidatePageTitle----Page Title is Validated 
+ [INFO] [LandingPage] [NavigatetoActiveUserPage] Class ------ LandingPage       Function -------NavigatetoActiveUserPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [ActiveUserGroupsPage] [CheckRepositoryPageLanguagesCount] Class ------ ActiveUserGroupsPage       Function -------CheckRepositoryPageLanguagesCount 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [ActiveUserGroupsPage] [ValidateGroupInfo] Class ------ ActiveUserGroupsPage       Function -------ValidateGroupInfo 
+ [INFO] [ActiveUserGroupsPage] [ValidateGroupInfo] Class ------ ActiveUserGroupsPage       Function -------ValidateGroupInfo 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [Navigate] Function ----Navigate----Navigated to Page and Maximized 
+ [INFO] [Reusable_Functions] [ValidatePageTitle] Function ----ValidatePageTitle----Page Title is Validated 
+ [INFO] [LandingPage] [NavigatetoActiveUserPage] Class ------ LandingPage       Function -------NavigatetoActiveUserPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [ActiveUserGroupsPage] [ClickGroupName] Class ------ ActiveUserGroupsPage       Function -------ClickGroupName 
+ [INFO] [ActiveUserGroupsPage] [ValidateNavigationtoMeetup] Class ------ ActiveUserGroupsPage       Function -------ValidateNavigationtoMeetup 
+ [INFO] [LandingPage] [Navigate_LandingPage] Class ------ LandingPage       Function -------Navigate_LandingPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [Reusable_Functions] [Navigate] Function ----Navigate----Navigated to Page and Maximized 
+ [INFO] [Reusable_Functions] [ValidatePageTitle] Function ----ValidatePageTitle----Page Title is Validated 
+ [INFO] [LandingPage] [NavigatetoEventLocationPage] Class ------ LandingPage       Function -------NavigatetoEventLocationPage 
+ [INFO] [Reusable_Functions] [waitForPageLoaded] Function ----waitForPageLoaded----Synchronized untill Page Loaded 
+ [INFO] [EventLocationPage] [ValidateMapExistence] Class ------ EventLocationPage       Function -------ValidateMapExistence 
+ [INFO] [EventLocationPage] [ValidateMapDetails] Class ------ EventLocationPage       Function -------ValidateMapDetails 
  

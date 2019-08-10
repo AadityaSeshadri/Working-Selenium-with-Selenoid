@@ -42,11 +42,11 @@ public class Hooks {
         //capabilities.setBrowserName("chrome");
         //capabilities.setVersion("76.0");
         //***********FireFox***********/
-        capabilities.setBrowserName("firefox");
-        capabilities.setVersion("68.0");
+        //capabilities.setBrowserName("firefox");
+        //capabilities.setVersion("68.0");
         //***********Opera*********** */
-        /*capabilities.setBrowserName("chrome");
-        capabilities.setVersion("62.0");*/
+        capabilities.setBrowserName("chrome");
+        capabilities.setVersion("62.0");
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         capabilities.setCapability("enableLog", true);
