@@ -196,3 +196,10 @@ Known Issues -
 
 
 
+
+Steps in Short- 
+1.docker-compose build 
+2.Browser=Chrome docker-compose up -d 
+3. ./run_tests.sh
+
+
