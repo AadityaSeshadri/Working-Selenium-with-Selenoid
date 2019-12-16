@@ -15,9 +15,9 @@ if [ -f $file ] ; then
     rm $file
 fi
 
-docker pull selenoid/vnc:chrome_76.0
-docker pull selenoid/vnc:firefox_68.0
-docker pull selenoid/vnc:opera_62.0
+docker pull selenoid/vnc:chrome_78.0
+docker pull selenoid/vnc:firefox_71.0
+docker pull selenoid/vnc:opera_65.0 
 docker pull selenoid/video-recorder:latest-release
 
 
